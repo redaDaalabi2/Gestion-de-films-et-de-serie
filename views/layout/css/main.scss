@@ -1,0 +1,32 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+.bold{
+    font-weight: bold;
+}
+.register{
+    margin-right: 20px;
+}
+.login{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+@media (max-width: 768px){
+    .register{
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .login{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .titre{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+.titre{
+    padding-left: 16px;
+    padding-right: 16px;
+}
