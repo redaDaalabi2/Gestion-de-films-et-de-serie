@@ -1,0 +1,7 @@
+Options all -Indexes
+
+RewriteEngine On
+
+RewriteBase /Gestion-de-films-et-de-serie/
+
+RewriteRule ^([-a-zA-Z0-9]+)$ index.php?page=$1

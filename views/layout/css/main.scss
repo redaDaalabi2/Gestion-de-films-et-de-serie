@@ -2,7 +2,7 @@ body {
     font-family: Helvetica, sans-serif;
 }
 .bold{
-    font-weight: bold;
+    font-weight: bold;   
 }
 .register{
     margin-right: 20px;
@@ -16,17 +16,28 @@ body {
         margin-right: 0px;
         margin-top: 10px;
         margin-bottom: 10px;
+        width: 100%;
     }
     .login{
         margin-top: 10px;
         margin-bottom: 10px;
+        width: 100%;
     }
     .titre{
         padding-top: 10px;
         padding-bottom: 10px;
+        padding-left: 100px;
     }
 }
 .titre{
     padding-left: 16px;
     padding-right: 16px;
+}
+.nom-serie{
+    font-weight: bold;
+    font-size: 30px;
+    padding: 30px;
+}
+.des-serie{
+    padding: 30px;
 }
