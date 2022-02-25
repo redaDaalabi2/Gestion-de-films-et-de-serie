@@ -18,13 +18,15 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-nav ms-auto d-flex">
-                    <a title="Connecter" class="rounded-pill btn btn-link mb-2" style="color: white; text-decoration: none;">
-                        <i class="fas fa-user"></i><span style="padding-left: 10px;"><?php echo $_SESSION['email']; ?></span>
-                    </a>
-                    <a href="logout" title="Déconnexion" class="rounded-pill btn btn-link mr-2 mb-2" style="color: white; text-decoration: none;">
-                        <i class="fas fa-sign-in-alt sign-in-icon"><span style="padding-left: 10px;"></span></i>Logout
-                    </a>
+                <div class="callapse navbar-collapse" id="mainmenu">
+                    <div class="navbar-nav ms-auto d-flex">
+                        <a title="Connecter" class="rounded-pill btn btn-link mb-2" style="color: white; text-decoration: none;">
+                            <i class="fas fa-user"></i><span style="padding-left: 10px;"><?php echo $_SESSION['email']; ?></span>
+                        </a>
+                        <a href="<?php echo BASE_URL;?>logout" title="Déconnexion" class="rounded-pill btn btn-link mr-2 mb-2" style="color: white; text-decoration: none;">
+                            <i class="fas fa-sign-in-alt sign-in-icon"><span style="padding-left: 10px;"></span></i>Logout
+                        </a>
+                    </div>
                 </div>
             </div>
     </div>

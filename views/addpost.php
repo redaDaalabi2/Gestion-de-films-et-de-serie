@@ -1,6 +1,4 @@
 <br>
-<br>
-<br>
 <?php
     include "includes/header_dash.php";
     if(isset($_POST['submit'])){
@@ -12,10 +10,10 @@
     <div class="row my-5">
         <div class="col-md-8 mx-auto">
             <div class="card">
-                <div class="text-center p-4 font-weight-bold">Ajouter un Poste</div>
+                <div class="text-center p-4 fw-bold">Ajouter un Poste</div>
                 <div class="p-3 mb-2 bg-transparent text-dark">
-                    <a href="<?php echo BASE_URL; ?>home" class="rounded-pill btn btn-dark mb-2 mt-2">
-                        <i class="fas fa-home"></i>
+                    <a href="<?php echo BASE_URL; ?>home" class="rounded-pill btn btn-dark mb-2">
+                        <i class="fas fa-home"><span style="padding-left: 10px;"></span></i>Home
                     </a>
                     <form method="post">
                         <div class="form-group">

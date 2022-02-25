@@ -10,7 +10,7 @@
 						Error 404 <br>
 						page est introuvable
 					</h2>
-					<a href="<?php echo BASE_URL;?>" class="rounded-pill btn btn-dark text-white m-5">Accueil</a>
+					<a href="<?php echo BASE_URL;?>home" class="rounded-pill btn btn-dark text-white m-5">Accueil</a>
 				</div>
 			</div>
 		</div>

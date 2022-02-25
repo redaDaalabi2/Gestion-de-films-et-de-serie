@@ -1,5 +1,4 @@
 <?php
-    // require_once './views/includes/header.php';
     require_once './autoload.php';
     require_once './controllers/HomeController.php';
     $home = new HomeController();

@@ -1,9 +1,9 @@
 <footer class="bg-dark text-center text-white">
-  <!-- <a href="#">
+  <a href="">
     <i class="fa-solid fa-circle-arrow-up h2" style="color: white; padding: 10px;"></i>
-  </a> -->
+  </a>
     <!-- Grid container -->
-    <div class="container p-4 pb-0 pt-5">
+    <div class="container pb-0">
       <!-- Section: Social media -->
       <section class="mb-4">
         <!-- Facebook -->

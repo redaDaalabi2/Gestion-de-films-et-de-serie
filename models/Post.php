@@ -1,7 +1,11 @@
 <?php
     class Post{
         static public function getAll(){
-            $stmt = DB::connect()->prepare('SELECT * FROM post');
+            $stmt = DB::connect()->prepare('SELECT post.* ,utilisateur.email,utilisateur.motdepasse
+            FROM post
+            INNER JOIN utilisateur
+            ON post.userId = utilisateur.id
+            ');
             $stmt->execute();
             return $stmt->fetchAll();
             // $stmt->close();
@@ -9,11 +13,13 @@
             $stmt = null;
         }
         static public function add($data){
-            $stmt = DB::connect()->prepare('INSERT INTO post (titre, description, photo, categorie) VALUES (:titre,:description,:photo,:categorie)');
+            $stmt = DB::connect()->prepare('INSERT INTO post (titre, description, photo, categorie, userId) VALUES (:titre,:description,:photo,:categorie,:userId)');
             $stmt->bindParam(':titre',$data['titre']);
             $stmt->bindParam(':description',$data['description']);
             $stmt->bindParam(':photo',$data['photo']);
             $stmt->bindParam(':categorie',$data['categorie']);
+            $stmt->bindParam(':userId',$_SESSION['Id_user']);
+            // var_dump(print_r($_SESSION['Id_user'])); 
             if($stmt->execute()){
                 return 'ok';
             }else{
@@ -65,7 +71,7 @@
         static public function searchPost($data){
             $search = $data['search']; 
             try{
-                $query = 'SELECT * FROM post WHERE titre LIKE ? OR categorie LIKE ?';
+                $query = 'SELECT post.* ,utilisateur.email,utilisateur.motdepasse FROM post INNER JOIN utilisateur ON post.userId = utilisateur.id WHERE titre LIKE ? OR categorie LIKE ?';
                 $stmt = DB::connect()->prepare($query);
                 $stmt->execute(array('%'.$search.'%','%'.$search.'%'));
                 $Poste = $stmt->fetchAll();

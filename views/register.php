@@ -5,7 +5,6 @@
         $createUtilisateur->register();
     }
 ?>
-
 <br>
 <div class="container mt-5">
 	<div class="row my-4">

@@ -7,6 +7,7 @@
                 if($result->email === $_POST['email'] && password_verify($_POST['motdepasse'],$result->motdepasse)){
                     $_SESSION['logged'] = true;
                     $_SESSION['email'] = $result->email;
+                    $_SESSION['Id_user'] = $result->id;
                     Redirect::to('home');
     
                 }else{
@@ -30,7 +31,7 @@
                 );
                 $result = User::createUser($data);
                 if($result === 'ok'){
-                    Session::set('success','Compte créer');
+                    Session::set('success','compte créer');
                     Redirect::to('login');
                 }else{
                     echo $result;
@@ -41,4 +42,7 @@
             session_destroy();
         }
     }
+
+    
+    
 ?>

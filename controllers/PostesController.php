@@ -30,7 +30,7 @@
                 );
                 $result = Post::add($data);
                 if($result === 'ok'){
-                    Session::set('success','Post Ajouté');
+                    Session::set('success','post Ajouté');
                     Redirect::to('home');
                 }else{
                     echo $result;
@@ -48,7 +48,7 @@
                 );
                 $result = Post::update($data);
                 if($result === 'ok'){
-                    Session::set('success','Post Modifier');
+                    Session::set('success','post Modifier');
                     Redirect::to('home');
                 }else{
                     echo $result;
@@ -60,7 +60,7 @@
                 $data['id'] = $_POST['id'];
                 $result = Post::delete($data);
                 if($result === 'ok'){
-                    Session::set('success','Post Supprimer');
+                    Session::set('success','post Supprimer');
                     Redirect::to('home');
                 }else{
                     echo $result;

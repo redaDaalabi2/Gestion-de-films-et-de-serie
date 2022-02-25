@@ -14,6 +14,7 @@
             // $stmt->close();
             $stmt = null;
         }
+        
         static public function login($data){
             $email = $data['email'];
             try{
