@@ -18,15 +18,15 @@
                     <form method="post">
                         <div class="form-group">
                             <label for="titre" class="mt-4 mb-4">Titre</label>
-                            <input type="text" name="titre" class="form-control" placeholder="Titre">
+                            <input required type="text" name="titre" class="form-control" placeholder="Titre">
                         </div>
                         <div class="form-group">
                             <label for="description" class="mt-4 mb-4">Description</label>
-                            <input type="text" name="description" class="form-control" placeholder="Description">
+                            <input required type="text" name="description" class="form-control" placeholder="Description">
                         </div>
                         <div class="form-group">
                             <label for="photo" class="mt-4 mb-4">Choisir un photo</label>
-                            <input type="file" name="photo" accept="image/png, image/jpeg">
+                            <input required type="file" name="photo" accept="image/png, image/jpeg">
                         </div>
                         <div class="form-group">  
                             <label for="categorie" class="mt-4 mb-4">Categorie</label>

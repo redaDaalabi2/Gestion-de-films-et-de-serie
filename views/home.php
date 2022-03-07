@@ -11,6 +11,14 @@
         $comments->addCommentaire();
     }
 ?>
+<style>
+    @media (max-width: 768px){
+        .med{
+            padding: 0px;
+            font-size: 12px;
+        }
+    }
+</style>
 <br>
 <br>
 <br>
@@ -22,15 +30,15 @@
             <div class="card">
                 <div class="p-3 mb-2 bg-transparent text-dark">
                     <div class="d-flex flex-nowrap">
-                        <a href="<?php echo BASE_URL; ?>addpost" class="rounded-pill btn btn-dark me-2 mb-2">
+                        <a href="<?php echo BASE_URL; ?>addpost" class="rounded-pill btn btn-dark me-2 mb-2 med">
                             <i class="fas fa-plus"><span style="padding-left: 10px;"></span></i>Ajouter un Post
                         </a>
-                        <a href="<?php echo BASE_URL; ?>home" class="rounded-pill btn btn-dark mb-2">
+                        <a href="<?php echo BASE_URL; ?>home" class="rounded-pill btn btn-dark mb-2 med">
                             <i class="fas fa-home"><span style="padding-left: 10px;"></span></i>Home
                         </a>
                         <div class="ms-auto">
                             <form method="post" class="float-right mb-2 d-flex flex-row">
-                                <input class="form-control" type="text" name="search" placeholder="Rechercher">
+                                <input class="form-control" required type="text" name="search" placeholder="Rechercher">
                                 <button class="btn btn-dark ms-2" name="find" type="submit" title="Chercher"><i class="fas fa-search"></i></button>
                             </form>
                         </div>
@@ -92,9 +100,10 @@
                                 </span>
                             <?php endforeach; ?>
                             <form method="post" class="d-flex flex-row my-4">
-                                <input type="text" name="contenue" class="form-control m-3" placeholder="Commenter">
+                                <input required type="text" name="contenue" class="form-control m-3" placeholder="Commenter">
                                 <input type="hidden" name="id" value="<?php echo $post['id']; ?>">
-                                <button class="border-0 bg-white me-4" type="submit" name="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                                <!-- <button class="border-0 bg-white me-4" type="submit" name="submit"><i class="fa-solid fa-paper-plane"></i></button> -->
+                                <button type="submit" aria-label="Soumettre ce message" name="submit" class="kltvjl-0 bsCnGQ" style="border: none; height: 38px; margin-top: 17px; background-color: black; border-radius: 50%; margin-right: 15px;"><svg size="48" class="sc-15iua2v-0 jaSQos ye9e3z-0 bhhnXa" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M21 2.91992L10 14.3599" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="colorwhite"></path><path d="M21 2.91992L14 23.7199L10 14.3599L1 10.1999L21 2.91992Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="colorwhite"></path></svg></button>
                             </form>
                         </div>
                     </div> 

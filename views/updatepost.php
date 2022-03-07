@@ -33,7 +33,7 @@
                         </div>
                         <div class="form-group">
                             <label for="photo" class="mt-2 mb-2">Photo</label>
-                            <input type="file" name="photo" class="form-control" placeholder="Photo" value="<?php echo $post->photo; ?>">
+                            <input required type="file" name="photo" class="form-control" placeholder="Photo" value="<?php echo $post->photo; ?>">
                         </div>
                         <div class="form-group">
                             <label for="categorie" class="mt-5 mb-2">Categorie</label>

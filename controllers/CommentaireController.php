@@ -26,8 +26,7 @@ class CommentaireController{
 				'contenue' => $_POST['contenue'],
                 'id' => $_POST['id']
 			);
-			
-			$result = Commentaire::add($data);
+			$result = Commentaire::addcommentaire($data);
 			if($result === 'ok'){
 				Session::set('success','commentaire Ajouté');
 				Redirect::to('home');

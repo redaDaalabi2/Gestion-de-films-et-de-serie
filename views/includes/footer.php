@@ -29,7 +29,7 @@
     <div class="text-center pb-3">
         <div class="container">
             <p class="lead pt-3" style="font-size: 16px">
-                Copyright &copy; 2022 <span class="fw-bold">CINE MASTER</span>
+                Copyright &copy; 2022 <span class="fw-bold">CINE <span style="color: red;">MASTER</span></span>
             </p>
         </div>
     </div>

@@ -3,7 +3,7 @@
 class Commentaire {
 
 	static public function getAll(){
-		$stmt = DB::connect()->prepare('SELECT * FROM commenataire');
+		$stmt = DB::connect()->prepare('SELECT * FROM commentaire');
 		$stmt->execute();
 		return $stmt->fetchAll();
 		
@@ -34,7 +34,7 @@ class Commentaire {
 		}
 	}
 
-	static public function add($data){
+	static public function addcommentaire($data){
 		$query = 'INSERT INTO commentaire (commentaire,userId,postId)
 		VALUES (:commentaire,:userId,:postId)';
 		$stmt = DB::connect()->prepare($query);

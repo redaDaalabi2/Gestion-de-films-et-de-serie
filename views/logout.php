@@ -1,4 +1,4 @@
 <?php
-    // UsersController::logout();
+    UsersController::logout();
     Redirect::to('login');
 ?>

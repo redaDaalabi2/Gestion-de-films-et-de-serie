@@ -67,7 +67,7 @@
                     <button class="btn btn-outline-danger rounded-pill">Let's Watch</button> 
                 </a>
             </div>
-                <img class="d-none d-sm-block img-fluid w-50" src="./views/layout/img/undraw_netflix.svg" alt="">
+            <img class="d-none d-sm-block img-fluid w-50" src="./views/layout/img/undraw_netflix.svg" alt="">
         </div>
     </div>
 </section>
@@ -100,25 +100,25 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <label class="form-control-label py-4">Name</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" placeholder="Enter your name">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
                         <label class="form-control-label py-4">Email</label>
-                        <input type="email" class="form-control">
+                        <input type="email" class="form-control" placeholder="Enter your email">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
                         <label class="form-control-label py-4">Phone</label>
-                        <input type="tel" class="form-control">
+                        <input type="tel" class="form-control" placeholder="Enter your N° phone">
                     </div>
                 </div>
             </div>
             <div class="form-group">
                 <label class="form-control-label py-4">Message</label>
-                <textarea type="text" class="form-control"></textarea>
+                <textarea type="text" class="form-control" placeholder="Enter your message"></textarea>
             </div>
             <span class="input-group-btn d-flex justify-content-center">
                 <button href="#" type="submit" class="btn btn-outline-danger py-3 ps-5 pe-5 btn-form mt-5">SEND FORM</button>

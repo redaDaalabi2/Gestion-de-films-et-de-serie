@@ -12,12 +12,14 @@
                 include('views/includes/404.php');
             }
         }else{
-            $home->index('Accueil');
+            $home->index('home');
         }
-
     }else if(isset($_GET['page']) && $_GET['page'] === 'register'){
         $home->index('register');
-    }else{
+    }else if(isset($_GET['page']) && $_GET['page'] === 'login'){
         $home->index('login');
+    }
+    else{
+        $home->index('Accueil');
     }
 ?>
